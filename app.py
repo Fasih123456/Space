@@ -1,4 +1,6 @@
 import pygame
+import random
+
 #CRTL + ALT + L will give you good formatting
 
 pygame.init()
@@ -13,8 +15,8 @@ pygame.display.set_icon(icon)
 
 # enemy
 enemyimage = pygame.image.load('enemy.PNG')
-enemyX = 370
-enemyY = 50
+enemyX = random.randint(0,800)
+enemyY = random.randint(50,150)
 enemychange = 0
 
 
